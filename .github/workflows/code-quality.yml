@@ -1,0 +1,19 @@
+name: Code Quality
+on: push
+jobs:
+  StandardJS:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run StandardJS
+        run: yarn standard
+  ESLint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install modules
+        run: yarn
+      - name: Run ESLint
+        run: yarn lint
