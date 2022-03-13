@@ -1,7 +1,7 @@
 import splitbee from "@splitbee/web";
 import { useEffect } from "react";
 
-export function useAnalytics() {
+export default function useAnalytics() {
   useEffect(() => {
     if (process.env.NODE_ENV !== "production") return;
 
