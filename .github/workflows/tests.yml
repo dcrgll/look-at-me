@@ -9,3 +9,4 @@ jobs:
         run: yarn
       - name: Run Tests
         run: yarn test:ci --coverage
+        continue-on-error: true
