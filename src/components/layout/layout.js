@@ -11,8 +11,9 @@ export default function Layout({ background, children }) {
 }
 
 Layout.propTypes = {
-  children:
-    PropTypes.arrayOf(PropTypes.element).isRequired ||
-    PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element
+  ]).isRequired,
   background: PropTypes.string.isRequired
 }
