@@ -2,5 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 yarn lint
-yarn test:ci
+yarn test:ci --passWithNoTests
 yarn prettier --check "src/**/*.js"

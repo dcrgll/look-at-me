@@ -3,6 +3,7 @@ import useSWR from "swr"
 import fetcher from "@/utils/fetcher"
 import Footer from "../footer/footer"
 import { useEffect, useState } from "react"
+import SEO from "@/components/seo"
 
 export default function Layout({ background, children }) {
   const [spotifyData, setSpotifyData] = useState({ isPlaying: false })
@@ -17,6 +18,7 @@ export default function Layout({ background, children }) {
 
   return (
     <>
+      <SEO />
       <main className={`${background} min-h-screen`}>
         <div className="min-h-screen flex items-center justify-center py-12">
           {children}
