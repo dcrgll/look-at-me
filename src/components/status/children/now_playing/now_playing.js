@@ -4,7 +4,7 @@ import { animate } from "motion"
 
 export default function NowPlaying({ data }) {
   return (
-    <div className="flex flex-row-reverse items-center sm:flex-row space-x-0 sm:space-x-2 w-full">
+    <div className="flex items-center sm:flex-row space-x-2 sm:space-x-2 w-full">
       {data?.songUrl ? (
         <div className="mx-2">
           <AnimatedBars />

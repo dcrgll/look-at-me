@@ -3,13 +3,12 @@ import Status from "@/components/status"
 import toast from "react-hot-toast"
 
 export default function Ping({ data }) {
-  console.log("data", data)
   function openToast() {
     toast.custom(
       (t) => {
         return <Status t={t} dismiss={() => toast.dismiss()} data={data} />
       },
-      { id: "copy", position: "bottom-right", duration: Infinity }
+      { id: "status", position: "bottom-right", duration: Infinity }
     )
   }
 
