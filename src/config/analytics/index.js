@@ -1,2 +1,2 @@
-import useAnalytics from './analytics'
-export default useAnalytics
+import useAnalytics from "./analytics";
+export default useAnalytics;

@@ -3,4 +3,4 @@
 
 yarn lint
 yarn test:ci
-yarn standard
+yarn prettier --check "src/**/*.js"
