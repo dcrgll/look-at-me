@@ -1,16 +1,16 @@
-import PropTypes from "prop-types";
-import "@/styles/tailwind.css";
-import "@/styles/extra.css";
-import useAnalytics from "@/config/analytics";
+import PropTypes from "prop-types"
+import "@/styles/tailwind.css"
+import "@/styles/extra.css"
+import useAnalytics from "@/config/analytics"
 
 function App({ Component, pageProps }) {
-  useAnalytics();
-  return <Component {...pageProps} />;
+  useAnalytics()
+  return <Component {...pageProps} />
 }
 
-export default App;
+export default App
 
 App.propTypes = {
   Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
-};
+  pageProps: PropTypes.object.isRequired
+}
