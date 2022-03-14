@@ -10,7 +10,7 @@ export default function Status({ t, dismiss, data }) {
     >
       <div className="flex-1 w-0 p-4">
         <div className="flex items-start">
-          <div className="flex-shrink-0 pt-0.5">
+          <div className="pt-0.5 overflow-x-hidden">
             <NowPlaying data={data} />
           </div>
         </div>
@@ -53,6 +53,8 @@ Status.propTypes = {
         name: PropTypes.string.isRequired
       }).isRequired
     }),
-    PropTypes.number
+    PropTypes.shape({
+      isPlaying: PropTypes.bool.isRequired
+    })
   ])
 }

@@ -17,10 +17,10 @@ export default function NowPlaying({ data }) {
           />
         </svg>
       )}
-      <div className="inline-flex flex-col w-full max-w-full truncate">
+      <div className="inline-flex flex-col w-full max-w-full overflow-hidden">
         {data?.songUrl ? (
           <a
-            className="capsize text-gray-800  font-medium  max-w-max truncate"
+            className="capsize text-gray-800 font-medium max-w-max truncate text-ellipsis overflow-x-hidden"
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -28,7 +28,7 @@ export default function NowPlaying({ data }) {
             {data.title}
           </a>
         ) : (
-          <p className="capsize text-gray-800  font-medium">Not Playing</p>
+          <p className="capsize text-gray-800 font-medium">Not Playing</p>
         )}
 
         <div className="capsize text-gray-500  max-w-max truncate">

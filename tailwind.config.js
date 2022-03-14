@@ -40,10 +40,12 @@ module.exports = {
         },
         fadeOutLeft: {
           "0%": {
-            opacity: "1"
+            opacity: "1",
+            transform: "translate(0)"
           },
           "100%": {
-            opacity: "0"
+            opacity: "0",
+            transform: "translate(2rem)"
           }
         }
       }

@@ -12,5 +12,29 @@ export default function Footer({ data }) {
 }
 
 Footer.propTypes = {
-  data: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
+  data: PropTypes.oneOfType([
+    PropTypes.shape({
+      isPlaying: PropTypes.bool.isRequired,
+      item: PropTypes.shape({
+        album: PropTypes.shape({
+          images: PropTypes.arrayOf(
+            PropTypes.shape({
+              height: PropTypes.number.isRequired,
+              url: PropTypes.string.isRequired,
+              width: PropTypes.number.isRequired
+            })
+          ).isRequired
+        }).isRequired,
+        artists: PropTypes.arrayOf(
+          PropTypes.shape({
+            name: PropTypes.string.isRequired
+          })
+        ).isRequired,
+        name: PropTypes.string.isRequired
+      }).isRequired
+    }),
+    PropTypes.shape({
+      isPlaying: PropTypes.bool.isRequired
+    })
+  ])
 }
