@@ -9,7 +9,8 @@ export default function Layout({ background, children }) {
   const [spotifyData, setSpotifyData] = useState(null)
   const { data } = useSWR(
     `https://api.lanyard.rest/v1/users/${process.env.NEXT_PUBLIC_DISCORD_ID}`,
-    fetcher
+    fetcher,
+    { refreshInterval: 10000 }
   )
 
   useEffect(() => {
