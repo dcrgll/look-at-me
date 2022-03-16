@@ -9,7 +9,7 @@ import Role from "@/components/role"
 
 export default function Home() {
   return (
-    <Layout background="bg-gray-50">
+    <Layout background="bg-gray-50 dark:bg-gray-800">
       <Content>
         <Title>
           Hey <Wave>👋🏼</Wave> I&apos;m Dan, <LineBreak />
