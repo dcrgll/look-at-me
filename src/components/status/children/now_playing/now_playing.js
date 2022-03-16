@@ -5,7 +5,7 @@ import { animate } from "motion"
 export default function NowPlaying({ data }) {
   return (
     <div className="flex items-center sm:flex-row space-x-2 sm:space-x-2 w-full">
-      {data?.songUrl ? (
+      {data?.spotify?.track_id ? (
         <div className="mx-2">
           <AnimatedBars />
         </div>
@@ -18,21 +18,23 @@ export default function NowPlaying({ data }) {
         </svg>
       )}
       <div className="inline-flex flex-col w-full max-w-full overflow-hidden">
-        {data?.songUrl ? (
+        {data?.spotify.song ? (
           <a
-            className="capsize text-gray-800 font-medium max-w-max truncate text-ellipsis overflow-x-hidden"
-            href={data.songUrl}
+            className="capsize text-gray-800 dark:text-gray-50 font-medium max-w-max truncate text-ellipsis overflow-x-hidden"
+            href={`https://open.spotify.com/track/${data?.spotify?.track_id}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {data.title}
+            {data?.spotify?.song}
           </a>
         ) : (
-          <p className="capsize text-gray-800 font-medium">Not Playing</p>
+          <p className="capsize text-gray-800 dark:text-gray-50 font-medium">
+            Not Playing
+          </p>
         )}
 
-        <div className="capsize text-gray-500  max-w-max truncate">
-          {data?.artist ?? "Spotify"}
+        <div className="capsize text-gray-500 dark:text-gray-100  max-w-max truncate">
+          {data?.spotify?.artist ?? "Spotify"}
         </div>
       </div>
     </div>

@@ -6,13 +6,17 @@ import { useEffect, useState } from "react"
 import SEO from "@/components/seo"
 
 export default function Layout({ background, children }) {
-  const [spotifyData, setSpotifyData] = useState({ isPlaying: false })
-  const { data } = useSWR("/api/spotify/now_playing/", fetcher)
+  const [spotifyData, setSpotifyData] = useState(null)
+  const { data } = useSWR(
+    `https://api.lanyard.rest/v1/users/${process.env.NEXT_PUBLIC_DISCORD_ID}`,
+    fetcher
+  )
 
   useEffect(() => {
-    if (data?.isPlaying === false) {
+    if (data?.spotify === false) {
       setSpotifyData(null)
     }
+    console.log(data)
     setSpotifyData(data)
   }, [data])
 
