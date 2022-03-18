@@ -12,6 +12,9 @@ const nextConfig = {
         destination: "https://hive.splitbee.io/:slug"
       }
     ]
+  },
+  images: {
+    domains: ["cdn.discordapp.com"]
   }
 }
 

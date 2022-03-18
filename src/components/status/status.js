@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import DiscordStatus from "./children/discord_status"
 import NowPlaying from "./children/now_playing/now_playing"
 
 export default function Status({ t, dismiss, data }) {
@@ -11,7 +12,11 @@ export default function Status({ t, dismiss, data }) {
       <div className="flex-1 w-0 p-4">
         <div className="flex items-start">
           <div className="pt-0.5 overflow-x-hidden">
-            <NowPlaying data={data} />
+            {data.spotify ? (
+              <NowPlaying data={data} />
+            ) : (
+              <DiscordStatus data={data} />
+            )}
           </div>
         </div>
       </div>
