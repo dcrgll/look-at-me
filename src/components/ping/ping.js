@@ -19,12 +19,12 @@ export default function Ping({ data }) {
     >
       <span
         className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-50 ${
-          data?.spotify ? "bg-green-400" : "bg-red-400"
+          data?.discord_status === "online" ? "bg-green-400" : "bg-red-400"
         }`}
       ></span>
       <span
         className={`relative inline-flex rounded-full h-8 w-8 opacity-80 ${
-          data?.spotify ? "bg-green-500" : "bg-red-500"
+          data?.discord_status === "online" ? "bg-green-500" : "bg-red-500"
         }`}
       ></span>
     </span>

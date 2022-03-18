@@ -9,7 +9,8 @@
     "lint": "next lint",
     "setup": "yarn upgrade && yarn install && husky install",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",

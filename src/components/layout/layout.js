@@ -2,24 +2,14 @@ import PropTypes from "prop-types"
 import useSWR from "swr"
 import fetcher from "@/utils/fetcher"
 import Footer from "../footer/footer"
-import { useEffect, useState } from "react"
 import SEO from "@/components/seo"
 
 export default function Layout({ background, children }) {
-  const [spotifyData, setSpotifyData] = useState(null)
   const { data } = useSWR(
     `https://api.lanyard.rest/v1/users/${process.env.NEXT_PUBLIC_DISCORD_ID}`,
     fetcher,
     { refreshInterval: 10000 }
   )
-
-  useEffect(() => {
-    if (data?.spotify === false) {
-      setSpotifyData(null)
-    }
-    console.log(data)
-    setSpotifyData(data)
-  }, [data])
 
   return (
     <>
@@ -29,7 +19,7 @@ export default function Layout({ background, children }) {
           {children}
         </div>
       </main>
-      <Footer data={spotifyData} />
+      <Footer data={data} />
     </>
   )
 }
