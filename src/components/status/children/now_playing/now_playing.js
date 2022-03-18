@@ -18,7 +18,7 @@ export default function NowPlaying({ data }) {
         </svg>
       )}
       <div className="inline-flex flex-col w-full max-w-full overflow-hidden">
-        {data?.spotify.song ? (
+        {data?.spotify?.song ? (
           <a
             className="capsize text-gray-800 dark:text-gray-50 font-medium max-w-max truncate text-ellipsis overflow-x-hidden"
             href={`https://open.spotify.com/track/${data?.spotify?.track_id}`}

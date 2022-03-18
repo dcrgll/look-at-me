@@ -32,29 +32,13 @@ Status.propTypes = {
     visible: PropTypes.bool.isRequired
   }).isRequired,
   dismiss: PropTypes.func.isRequired,
-  data: PropTypes.oneOfType([
-    PropTypes.shape({
-      isPlaying: PropTypes.bool.isRequired,
-      item: PropTypes.shape({
-        album: PropTypes.shape({
-          images: PropTypes.arrayOf(
-            PropTypes.shape({
-              height: PropTypes.number.isRequired,
-              url: PropTypes.string.isRequired,
-              width: PropTypes.number.isRequired
-            })
-          ).isRequired
-        }).isRequired,
-        artists: PropTypes.arrayOf(
-          PropTypes.shape({
-            name: PropTypes.string.isRequired
-          })
-        ).isRequired,
-        name: PropTypes.string.isRequired
-      }).isRequired
-    }),
-    PropTypes.shape({
-      isPlaying: PropTypes.bool.isRequired
+  data: PropTypes.shape({
+    spotify: PropTypes.shape({
+      song: PropTypes.string,
+      artist: PropTypes.string,
+      track_id: PropTypes.string,
+      album: PropTypes.string,
+      album_art_url: PropTypes.string
     })
-  ])
+  }).isRequired
 }
