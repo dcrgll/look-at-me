@@ -61,7 +61,8 @@ const renderGameStatus = (data) => {
             alt={data?.activities[0]?.emoji?.name}
           />
         )}
-        <p>is playing {data?.activities[0]?.name}</p>
+        {data?.activities != 0 && <p>is playing {data?.activities[0]?.name}</p>}
+        {data?.activities == 0 && <p>offline</p>}
       </div>
     )
 }

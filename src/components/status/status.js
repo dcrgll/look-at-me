@@ -12,7 +12,7 @@ export default function Status({ t, dismiss, data }) {
       <div className="flex-1 w-0 p-4">
         <div className="flex items-start">
           <div className="pt-0.5 overflow-x-hidden">
-            {data.spotify ? (
+            {data.listening_to_spotify ? (
               <NowPlaying data={data} />
             ) : (
               <DiscordStatus data={data} />
@@ -44,6 +44,7 @@ Status.propTypes = {
       track_id: PropTypes.string,
       album: PropTypes.string,
       album_art_url: PropTypes.string
-    })
+    }),
+    listening_to_spotify: PropTypes.bool
   }).isRequired
 }
