@@ -4,7 +4,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}"
   ],
   safelist: [
-    "text-sky-400",
+    "text-fuchsia-400",
     "text-indigo-400",
     "text-emerald-400",
     "text-orange-400",
