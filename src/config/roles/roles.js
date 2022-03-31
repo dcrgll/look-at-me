@@ -1,7 +1,7 @@
 export const ROLES = [
   {
     text: "developer",
-    color: "text-sky-400"
+    color: "text-fuchsia-400"
   },
   {
     text: "creative",
