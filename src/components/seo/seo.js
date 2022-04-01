@@ -5,8 +5,9 @@ export default function SEO({ ...customMeta }) {
   const router = useRouter()
 
   const meta = {
-    title: "Dan Cargill – Developer & creative",
-    description: `Front-end developer and creative based in London.`,
+    title: "Dan Cargill – Web Developer & creative",
+    description: `Front-end developer and creative based in London. I mainly work with typescript, react, nextjs, node and
+    tailwind.`,
     image: "https://cargill.dev/static/images/banner.png",
     type: "website",
     ...customMeta
