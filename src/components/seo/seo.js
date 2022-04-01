@@ -8,7 +8,7 @@ export default function SEO({ ...customMeta }) {
     title: "Dan Cargill – Web Developer & creative",
     description: `Front-end developer and creative based in London. I mainly work with typescript, react, nextjs, node and
     tailwind.`,
-    image: "https://cargill.dev/static/images/banner.png",
+    image: "https://www.cargill.dev/static/images/banner.png",
     type: "website",
     ...customMeta
   }
@@ -18,8 +18,11 @@ export default function SEO({ ...customMeta }) {
       <title>{meta.title}</title>
       <meta name="robots" content="follow, index" />
       <meta content={meta.description} name="description" />
-      <meta property="og:url" content={`https://cargill.dev${router.asPath}`} />
-      <link rel="canonical" href={`https://cargill.dev${router.asPath}`} />
+      <meta
+        property="og:url"
+        content={`https://www.cargill.dev${router.asPath}`}
+      />
+      <link rel="canonical" href={`https://www.cargill.dev${router.asPath}`} />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
