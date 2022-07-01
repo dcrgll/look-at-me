@@ -20,7 +20,7 @@
     "motion": "^10.11.0",
     "next": "12.2.0",
     "nprogress": "^0.2.0",
-    "react": "18.0.0",
+    "react": "18.2.0",
     "react-dom": "18.0.0",
     "react-hot-toast": "^2.1.1",
     "react-text-loop": "^2.3.0",
