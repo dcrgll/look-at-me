@@ -786,10 +786,10 @@
     "@motionone/utils" "^10.9.0"
     tslib "^2.3.1"
 
-"@motionone/dom@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.11.0.tgz#dc2e46b0e21044cc9ae89a994cd6725eac09e48b"
-  integrity sha512-ST56HBslkeoeDwqRFWafkD+JT5FEwlHqB2K2KGaQh6wo6zfKQ9xwjQcqgDiBv2gg6s8ycjHAdFS6dnMHQ5hXKw==
+"@motionone/dom@^10.11.2":
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.11.2.tgz#a5256e372a04593ba62949e00708173639496db2"
+  integrity sha512-0SX4acPV1srcnzi0ZKzeq/aqDq86Wwd2G2RiLbLhIGFB3zZB/rJ46yNW3AUhSPKEQLCL20J3e8V4hyfPdEZ5TA==
   dependencies:
     "@motionone/animation" "^10.10.1"
     "@motionone/generators" "^10.9.0"
@@ -815,21 +815,21 @@
     "@motionone/utils" "^10.9.0"
     tslib "^2.3.1"
 
-"@motionone/react@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/react/-/react-10.11.0.tgz#ccf6ec71e23cf88067aaecd5ba8b89637a87351f"
-  integrity sha512-FzVA/P9Hcdl5fL/AKrXrQbEuA+RqHBLExl5JkEvqgNyBp4qPQppRRUS9HGJ8SppSBYuNMkJvBBLQVtC9ghk5EQ==
+"@motionone/react@^10.11.2":
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/@motionone/react/-/react-10.11.2.tgz#db72c8cd5545da6791372c95bc640d0b18e2de75"
+  integrity sha512-8ksyST9iup2tuzBCtjHL9/vP6dBeTI27OpwQI15JZYfKUhUgBxO80KgHhXlaXx6yBCysQhikuffEFBUK4aAxig==
   dependencies:
-    "@motionone/dom" "^10.11.0"
+    "@motionone/dom" "^10.11.2"
     hey-listen "^1.0.8"
     tslib "^2.3.1"
 
-"@motionone/svelte@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/svelte/-/svelte-10.11.0.tgz#dedbd15d5c780747496ea755bdf0874865c8d169"
-  integrity sha512-GRYM9wci0KhFngKgJhtzogjaA3dmWaOkKeM2HMZcTJlpXbIWKVXeADQDv+DiS4uW0l2cqdKqEa1BOpemdwDRAw==
+"@motionone/svelte@^10.11.2":
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/@motionone/svelte/-/svelte-10.11.2.tgz#a5057067d8f828e44b00c3794c02dff842916125"
+  integrity sha512-SJXIJHBouG6JIJ4LuYJ/aMBLun1T6oYrRnYV4TYskCmh1jTbM3qmrptCdUxyTP7jcUvBTh1BlUpTr27LAPLgUw==
   dependencies:
-    "@motionone/dom" "^10.11.0"
+    "@motionone/dom" "^10.11.2"
     tslib "^2.3.1"
 
 "@motionone/types@^10.9.0":
@@ -846,12 +846,12 @@
     hey-listen "^1.0.8"
     tslib "^2.3.1"
 
-"@motionone/vue@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/vue/-/vue-10.11.0.tgz#7885b8ce4c75316ee5e24fc92119c27237c43154"
-  integrity sha512-2qfkcHsqtJAS5XJCtxsGu0Rkp6oaTOPeuaeoOKiv9e7A3CpB5o6ZTHLjG5IeRoAGiEQFhX73TsEx4kne4gW33g==
+"@motionone/vue@^10.11.2":
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/@motionone/vue/-/vue-10.11.2.tgz#72c667afddb474d1411b27790a16782bb7ec73c4"
+  integrity sha512-xpec0qFQhbkgQ3mFap9aaiBLGSdhNAnomh7+Y4xIhVGK0KzwEAqJm6T+fN1pJwiX/gHdwN4VnslP8uLfS6Lz2A==
   dependencies:
-    "@motionone/dom" "^10.11.0"
+    "@motionone/dom" "^10.11.2"
     tslib "^2.3.1"
 
 "@next/env@12.2.0":
@@ -3422,17 +3422,17 @@ minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
-motion@^10.11.0:
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/motion/-/motion-10.11.0.tgz#91db6bdadb592df4affbe1161cc8b7d495e0e35c"
-  integrity sha512-4F5p+9FOx0UjcCp1T9G3AP9F7EM3WKrD5E0mKfDzoXr6Kgo1CZ5+s4UHzXsYLNtceYVMTqGA20nWsjI9BvZbcg==
+motion@^10.11.2:
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/motion/-/motion-10.11.2.tgz#05ad1404e55b8b662f008c06d17e015bcd999889"
+  integrity sha512-SFBIeZJOY8xXRXh39CmkjDeWaFBYLnOf6uAiwnZal1MPfPz3qq3OOegZRDTrT/pPAyC7vn4y1V/IPc7jrqFMWw==
   dependencies:
     "@motionone/animation" "^10.10.1"
-    "@motionone/dom" "^10.11.0"
-    "@motionone/react" "^10.11.0"
-    "@motionone/svelte" "^10.11.0"
+    "@motionone/dom" "^10.11.2"
+    "@motionone/react" "^10.11.2"
+    "@motionone/svelte" "^10.11.2"
     "@motionone/types" "^10.9.0"
-    "@motionone/vue" "^10.11.0"
+    "@motionone/vue" "^10.11.2"
 
 ms@2.0.0:
   version "2.0.0"
