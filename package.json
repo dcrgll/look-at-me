@@ -11,7 +11,8 @@
     "setup": "yarn upgrade && yarn install && husky install",
     "test": "jest --watch",
     "test:ci": "jest --ci",
-    "prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'"
+    "prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write '**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.5",
