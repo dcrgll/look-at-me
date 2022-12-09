@@ -15,7 +15,7 @@
     "prettier:fix": "prettier --write '**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.5",
+    "@headlessui/react": "^1.7.5",
     "@splitbee/web": "^0.3.0",
     "isomorphic-fetch": "^3.0.0",
     "motion": "^10.11.0",
