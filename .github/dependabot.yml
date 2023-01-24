@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     labels:
       - "dependency"
     # Always increase the version requirement to match the new version.
@@ -16,6 +16,6 @@ updates:
         update-types:
           ["version-update:semver-minor", "version-update:semver-patch"]
     schedule:
-      interval: "daily"
+      interval: "weekly"
     labels:
       - "github-actions"
